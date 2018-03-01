@@ -82,7 +82,8 @@
       for (var y = 0; y < NUM_CHAR_COLS; y++) {
         for (var x = 0; x < NUM_CHAR_PER_ROW; x++) {
           var index =
-            y * VIDEO_WIDTH * CHAR_PIXEL_HEIGHT * 4 + x * CHAR_PIXEL_WIDTH * 4;
+            (y + 1) * VIDEO_WIDTH * CHAR_PIXEL_HEIGHT * 4 -
+            x * CHAR_PIXEL_WIDTH * 4;
 
           var pixelRed = pixelByteData[index];
           var pixelGreen = pixelByteData[index + 1];
