@@ -1,6 +1,7 @@
 # See yourself in ASCII vision
 
 clone repo
+switch into repo `cd ascii-mirror`
 run `npm install`
-run `http-server -c-1`
-open localhost:8080 in browser
+run `npm run start`
+open localhost:8080 in (currently only a Chrome) browser
